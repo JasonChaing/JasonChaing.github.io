@@ -1,0 +1,123 @@
+body 
+{ 
+    background-color: #9E9E9E;
+    overflow: hidden;
+    overflow-y: hidden;
+}
+
+.div-1 {
+    text-align: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top:25px;
+    font-size:x-large;
+    line-height: 1.8;
+    margin-left: 25px;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+.side-panel-toggle {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+
+    color:white;
+    background: #686767;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+.side-panel-toggle:hover {
+    background: #686767;
+    
+}
+
+.sp-icon-close {
+    display: none !important;
+}
+
+.side-panel {
+    display: none;
+    width: 280px;
+    flex-shrink: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    padding: 20px;
+    color: white;
+    background:#686767 ;
+    box-shadow: 0 0 10px rgba(0,0,0,0.35);
+}
+
+.side-panel-open .side-panel {
+    display: initial;
+}
+
+.side-panel-open .sp-icon-open {
+    display: none !important;
+}
+
+.side-panel-open .sp-icon-close {
+    display:initial !important;
+}
+
+.icon-section {
+    background-color: rgba(0,0,0,.25); 
+    padding: 20px;
+    border-radius: 25px;
+    display: inline-block;
+    margin-top:110px;
+    margin-left: 30px;
+}
+
+.social-icon { 
+    color: white;
+    transition: color 0.2s;
+    text-decoration:none;
+    margin: 0 45px;
+    font-size: 120px;
+   
+}
+
+.social-icon:hover{
+    color: grey;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height:100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#7F7FD5,#86A8E7,#91EAE4);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
